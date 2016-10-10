@@ -92,6 +92,16 @@ for (key, value) in dictionaryTwo{
     print("Key: \(key), Value: \(value)")
 }
 
+let numbers = [0,1,2,3,4,5]
+
+for number in numbers {
+    print (number)
+}
+
+for number in stride(from: 0, to: numbers.count, by: 1) {
+    print (number)
+}
+
 
 //While Loop
 
@@ -122,8 +132,27 @@ if temperatureInFahrenheit <= 32 {
     print("It's not that cold. Wear a t-shirt.")
 }
 
+var planet = "Mars"
+let equal = planet == "Earth" ? true : false
+
 
 //Switch Statement
+
+let age = 30
+
+switch age {
+case 0...3:
+    print ("Toddler")
+case 4...12:
+    print ("Trouble")
+case 13..<19:
+    print ("Teenager")
+case 18, 21, 30:
+    print ("It depends")
+    
+default:
+    print ("This wasn't what I expected")
+}
 
 let someCharacter: Character = "z"
 switch someCharacter {
@@ -168,6 +197,9 @@ case (-2...2, -2...2):
 default:
     print("(\(somePoint.x), \(somePoint.y)) is outside of the box")
 }
+
+
+
 
 //Optionals
 
